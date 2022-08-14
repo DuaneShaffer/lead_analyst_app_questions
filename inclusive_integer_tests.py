@@ -23,5 +23,10 @@ class InclusiveIntTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             is_inclusive_integer((20, 10), 20)
 
+    def test_zero_width_range(self):
+        self.assertEqual(is_inclusive_integer((10,10), 5), False)
+        self.assertEqual(is_inclusive_integer((10, 10), 10), True)
+
+
 if __name__ == '__main__':
     unittest.main()
