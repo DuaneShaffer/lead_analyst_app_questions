@@ -9,5 +9,8 @@ class InclusiveIntTests(unittest.TestCase):
     def test_edge_case_lower(self):
         self.assertEqual(is_inclusive_integer((10, 20), 10), True)
 
+    def test_edge_case_upper(self):
+        self.assertEqual(is_inclusive_integer((10, 20), 20), True)
+
 if __name__ == '__main__':
     unittest.main()
