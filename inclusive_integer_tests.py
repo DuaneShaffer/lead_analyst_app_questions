@@ -15,9 +15,7 @@ class InclusiveIntTests(unittest.TestCase):
 
     def test_impossible_range(self):
         with self.assertRaises(ValueError):
-            is_inclusive_integer((20, 10), 15),
-
-    def test_impossible_range_2(self):
+            is_inclusive_integer((20, 10), 15)
         with self.assertRaises(ValueError):
             is_inclusive_integer((20, 10), 20)
 
