@@ -19,5 +19,8 @@ class InclusiveIntTests(unittest.TestCase):
     def test_null_string(self):
         self.assertEqual(are_anagrams('agile', ''), False)
 
+    def test_null_strings(self):
+        self.assertEqual(are_anagrams('', ''), True)
+
 if __name__ == '__main__':
     unittest.main()
