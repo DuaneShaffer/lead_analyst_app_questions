@@ -16,5 +16,8 @@ class InclusiveIntTests(unittest.TestCase):
         self.assertEqual(are_anagrams('Clint Eastwood', 'Old West action'), True)
         self.assertEqual(are_anagrams('Signature', 'A True Sign'), True)
 
+    def test_null_string(self):
+        self.assertEqual(are_anagrams('agile', ''), False)
+
 if __name__ == '__main__':
     unittest.main()
