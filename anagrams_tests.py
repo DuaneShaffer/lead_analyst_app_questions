@@ -14,7 +14,7 @@ class InclusiveIntTests(unittest.TestCase):
 
     def test_with_mixed_case(self):
         self.assertEqual(are_anagrams('Clint Eastwood', 'Old West action'), True)
-        self.assertEqual(are_anagrams('Signature', 'True Sign'), True)
+        self.assertEqual(are_anagrams('Signature', 'A True Sign'), True)
 
 if __name__ == '__main__':
     unittest.main()
