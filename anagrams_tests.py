@@ -10,6 +10,7 @@ class InclusiveIntTests(unittest.TestCase):
 
     def test_with_spaces(self):
         self.assertEqual(are_anagrams('dormitory', 'dirty room'), True)
+        self.assertEqual(are_anagrams('a gentleman', 'elegant man'), True)
 
 if __name__ == '__main__':
     unittest.main()
